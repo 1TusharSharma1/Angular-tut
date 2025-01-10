@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app = "moduleName"> <!-- naming it would allow us to use it as a module  -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular</title>
     <script src="app/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" ng-model="name">
-    <h1 class= {{name}}>Hello {{name}}</h1>
+    <div>
+        <h1> Data is being supplied via controllers</h1>
+        <div ng-controller = "myController">
+            <h2> {{message}} </h2>
+            <h2> {{anotherMessage}} </h2>
+
+    </div>
     
 </body>
 </html>

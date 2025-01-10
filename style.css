@@ -2,21 +2,6 @@ body{
     font-family: Helvetica;
     margin: 0;
   }
-  .red{
-    color: crimson;
-  }
-  .blue{
-    color: blue;
-  }
-  .green{
-    color: green;
-  }
-  .yellow{
-    color: yellow;
-  }
-  .orange{
-    color: orange;
-  }
   h1,h2,h3{
     margin: 0;
   }
