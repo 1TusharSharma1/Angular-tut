@@ -11,9 +11,10 @@
 <body>
     <div ng-controller= "myController" >
 
-        <input type="text" ng-model="search">
-        <ul ng-repeat="n in obj | orderBy : 'name' | filter: search" >
-            <li>{{n.name}}</li>
+        <input type="text" ng-model="search" >
+        <ul ng-repeat="n in obj | orderBy : 'name' | filter: search" ng-show="n.available" >
+            <!-- ng-hide works opposite of ng-show -->
+            <li >{{n.name}}</li>
             </ul>
 
     </div>

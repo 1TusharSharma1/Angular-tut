@@ -1,26 +1,29 @@
-let myModule = angular.module('moduleName', []);
+let myModule = angular.module("moduleName", []);
 
-
-myModule.controller('myController', ['$scope', function($scope) {
-    $scope.obj = [{
-        name: 'Alice Doe',
+myModule.controller("myController", [
+  "$scope",
+  function ($scope) {
+    $scope.obj = [
+      {
+        name: "Alice Doe",
         age: 25,
-
-    },
-    {
-        name: 'Jane Doe',
+        available: true,
+      },
+      {
+        name: "Jane Doe",
         age: 26,
-
-    },
-    {
-        name: 'Zayn Doe',
+        available: true,
+      },
+      {
+        name: "Zayn Doe",
         age: 27,
-    },
-    {
-        name: 'Shaun Doe',
+        available: true,
+      },
+      {
+        name: "Shaun Doe",
         age: 28,
-    }
-
-];
-
-}]);
+        available: false,
+      },
+    ];
+  },
+]);
