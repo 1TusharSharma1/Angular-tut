@@ -1,29 +1,19 @@
 let myModule = angular.module("moduleName", []);
 
 myModule.controller("myController", [
-  "$scope",
-  function ($scope) {
-    $scope.obj = [
-      {
-        name: "Alice Doe",
-        age: 25,
-        available: true,
-      },
-      {
-        name: "Jane Doe",
-        age: 26,
-        available: true,
-      },
-      {
-        name: "Zayn Doe",
-        age: 27,
-        available: true,
-      },
-      {
-        name: "Shaun Doe",
-        age: 28,
-        available: false,
-      },
-    ];
-  },
+  "$scope", function ($scope) {
+    $scope.changeName = function (name) {  
+      if(!name){
+        return;
+      }
+      var output =" ";
+      for(let i = 0; i < name.length;i++){
+        if(i> 0 && name[i] == name[i].toUpperCase()){
+          output +=" ";
+      }
+      output += name[i];
+    }
+    $scope.output = output;
+  }
+}
 ]);
