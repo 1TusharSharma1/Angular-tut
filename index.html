@@ -11,22 +11,8 @@
 </head>
 <body ng-app = "moduleName">
     <div ng-controller= "myController" >
-        <h1>Angular Custom Filter</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Allowed to Drink?</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat = "people in obj">
-                    <td>{{people.name}}</td>
-                    <td>{{people.age}}</td>
-                    <td>{{people.age | customFilter}}</td>
-                </tr>
-        </table>
+        <custom-directive>Angular Custom Directive</custom-directive>
+
 
     </div>
     
